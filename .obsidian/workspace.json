@@ -1,0 +1,148 @@
+{
+  "main": {
+    "id": "027f5fe1cee20e89",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1470ca46a150174",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a380f91c70dec95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Basic/Git配置.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c4bb8d7e5a8884fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "9fd7ebf1501d3a46",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "27597d4c2b95a853",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d2168e5139405d88",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "81129b060075a499",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ac777e4c3a7d4694",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e5624c442466445",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3974d5346974767b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Linux/Basic/Git配置.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "644a9fa402ecdd7d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Linux/Basic/Git配置.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "88f771238b5b25a3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b4c780e5aec9c03a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Linux/Basic/Git配置.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "6a380f91c70dec95",
+  "lastOpenFiles": [
+    "Linux/Basic/Git常用指令收集.md",
+    "Algori/二叉树.md",
+    "Algori/动态规划.md"
+  ]
+}
