@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Basic/Git配置.md",
+                "file": "Algori/二分查找算法.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Basic/Git配置.md",
+                "file": "Algori/二分查找算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Basic/Git配置.md",
+                "file": "Algori/二分查找算法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Basic/Git配置.md"
+                "file": "Algori/二分查找算法.md"
               }
             }
           }
@@ -141,6 +141,7 @@
   },
   "active": "6a380f91c70dec95",
   "lastOpenFiles": [
+    "Linux/Basic/Git配置.md",
     "Linux/Basic/Git常用指令收集.md",
     "Algori/二叉树.md",
     "Algori/动态规划.md"
