@@ -1,0 +1,246 @@
+本博客已由Hexo移至Hugo框架，本教程仅做备份
+## 1.环境准备
+
+- node.js ([node.js安装教程](https://jklash.com/index.php/archives/12.html))
+- nginx (使用宝塔安装)
+
+## 2.安装Hexo
+
+```bash
+npm install hexo-cli -g
+```
+
+## 3.配置Hexo
+
+### 创建第一个Blog
+
+```bash
+hexo init blog
+cd blog
+npm install
+```
+
+### 启动
+
+```bash
+npm install hexo --save
+#清理
+hexo clean
+#生成静态文件
+hexo g
+hexo generate
+#安装部署插件
+npm install hexo-deployer-git --save
+#推送远程
+hexo d
+hexo deploy
+#启动服务
+hexo s
+hexo server
+```
+
+### 主题配置
+
+hexo官方主题仓库地址：[https://hexo.io/themes/](https://hexo.io/themes/)
+
+主题推荐：[butterfly](https://github.com/jerryc127/hexo-theme-butterfly)
+
+```bash
+#将主题解压至博客的themes目录下
+tar -zxvf hexo-theme-butterfly-XXX.tar.gz -C themes
+
+#修改config.yml
+#添加或者修改, 和themes目录下的主题目录名一致
+theme: butterfly
+```
+
+## 4.发布
+
+### 方法1: 使用git自动发布到本地和GitHub Page
+
+```bash
+mkdir git
+cd git
+git init --bare blog.git
+```
+
+配置 git hook, 在 blog.git/hooks 目录下新建一个post-receive文件, 然后输入以下内容:
+
+```bash
+#!/bin/bash
+git --work-tree=blog --git-dir=/git/blog.git checkout -f
+```
+
+然后添加权限
+
+```bash
+chmod +x blog.git/hooks/post-receive
+```
+
+**示例**
+
+```bash
+#!/bin/bash
+git --work-tree=/www/wwwroot/hexo/blog --git-dir=/www/wwwroot/hexo/git/blog.git checkout -f
+```
+
+修改配置
+
+修改config.yml, 绑定git仓库
+
+```yaml
+deploy:
+  type: 'git'
+  repo:
+        github: github仓库地址 #可选
+        local: 本地仓库地址
+  branch: master
+```
+
+**示例**
+
+```yaml
+deploy:
+  type: 'git'
+  repo:
+        github: https://xxxxx@github.com/jklash1996/jklash1996.github.io.git
+        coding: https://xxxxx@e.coding.net/jklash/jklash-hexo/blog.git
+        local: root@ipaddr:/www/wwwroot/hexo/git/blog
+  branch: master
+```
+
+宝塔发布网站，设置blog为网站目录并设置静态
+或者发布到GitHub Page
+
+### 方法2: 使用GitHub Action自动部署
+
+Github新建库(推荐建私有库)
+
+配置ssh密钥，上传源码
+
+```bash
+git init
+git add .
+git commit -m "first commit"
+git remote add origin xxx
+git branch -M main
+git push -u orgin main
+```
+
+Github Action添加workflow，添加yml脚本，如下所示
+
+使用rsync部署到服务器
+
+- 服务器执行 `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`, 不添加会有权限问题
+- 将服务器ssh私钥(id_rsa)添加到Github仓库的secrets中，下面脚本中的SSH_PRIVATE_KEY需填入设置的secrets名称;
+- 将服务器地址添加到Github仓库的secrets中，下面脚本中的REMOTE_HOST需填入设置的secrets名称;
+- 服务器安装rsync，并设置要同步的目录
+
+GitHub Action工作流示例
+
+```yaml
+name: Deploy Hexo # 部署Hexo
+
+on: # 触发条件
+push:
+branches:
+
+- main # 推送到 main 分支
+
+release:
+types:
+
+- published # 推送新版本号
+
+workflow_dispatch: # 手动触发
+
+jobs:
+build:
+runs-on: ubuntu-latest
+
+steps:
+
+- name: Checkout # Checkout 仓库
+  uses: actions/checkout@v2
+  with:
+  ref: main
+- name: Setup Node # 安装 Node.js
+  uses: actions/setup-node@v2
+  with:
+  node-version: "14.x"
+- name: Install Hexo # 安装 Hexo
+  run: |
+  npm install hexo-cli -g
+  npm install hexo --save
+  npm install hexo-deployer-git --save
+- name: Cache Modules # 缓存 Node 插件
+  uses: actions/cache@v2
+  id: cache-modules
+  with:
+  path: node_modules
+  key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+- name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件
+  if: steps.cache-modules.outputs.cache-hit != 'true'
+  run: |
+  npm install
+  npm ci
+- name: Generate # 生成
+  run: |
+  hexo clean
+  hexo generate
+- name: Deploy to Github # 部署到Github
+  run: |
+  git config --global user.name "jklash1996"
+  git config --global user.email "jklash1976@gmail.com"
+  export TZ='Asia/Shanghai'
+  hexo deploy
+- name: Deploy to tencent server # 部署到云服务器
+  uses: easingthemes/ssh-deploy@v2.1.5
+  env:
+  ARGS: "-avz --delete"
+  SOURCE: "public/" # 要同步到服务器的目录
+  REMOTE_HOST: ${{ secrets.TENCENT_HOST}} # 服务器 IP 地址
+  REMOTE_USER: ${{ secrets.TENCENT_USER}} # 服务器 SSH 连接用户名
+  SSH_PRIVATE_KEY: ${{ secrets.TENCENT_KEY}} # 配置在服务器上公钥所对应的私钥
+  TARGET: ${{ secrets.TENCENT_PATH}} # 服务器上对应网站的根目录</pre>
+```
+
+## 5.常见错误
+
+1. 如果在window下使用hexo, window下执行hexo出现错误
+
+> hexo : 无法加载文件C:\Users\imwan\AppData\Roaming\npm\hexo.ps1，因为在此系统上禁止运行脚本。
+
+
+**解决方法：**
+
+cmd输入
+
+```bash
+set-ExecutionPolicy RemoteSigned
+```
+
+选择yes
+
+## 6.ngnix缓存设置
+
+```bash
+    location ~* \.(html|xml)$ {
+        error_log /dev/null;
+        access_log off;
+        add_header Cache-Control no-cache;
+    }
+ 
+    location ~* \.(css|js|png|jpg|jpeg|gif|gz|svg|mp4|mp3|ogg|ogv|webm|htc|woff2|ico|woff|ttf)$ {
+        error_log /dev/null;
+        access_log off;
+        add_header Cache-Control "public,max-age=864000";
+    }
+ 
+    location ~ .*\.(js|css)?$
+    {
+        error_log /dev/null;
+        access_log off;
+        add_header Cache-Control no-cache;
+    }
+```
