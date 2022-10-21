@@ -1,5 +1,3 @@
-# pulseaudio学习笔记
-
 ## 一、连接至pulse服务
 
 ```cpp

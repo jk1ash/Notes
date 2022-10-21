@@ -1,5 +1,3 @@
-# vector容器
-
 ## 一、什么是vector？
 
 > 向量（Vector）是一个封装了动态大小数组的顺序容器（Sequence Container）。跟任意其它类型容器一样，它能够存放各种类型的对象。可以简单的认为，向量是一个能够存放任意类型的动态数组。
@@ -206,7 +204,7 @@ int main()
 3,1,0,
 ```
 
-注意 sort 需要头文件 #include
+注意 sort 需要头文件 \#include
 
 如果想 sort 来降序，可重写 sort
 

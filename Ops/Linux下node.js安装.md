@@ -1,5 +1,3 @@
-# Linux下node.js安装
-
 ## 安装nvm
 
 ```

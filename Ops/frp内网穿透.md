@@ -1,12 +1,8 @@
-# frp内网穿透
+## 服务端
 
-## frp
+### 安装配置
 
-### 服务端
-
-#### 安装配置
-
-```
+```shell
 #下载解压
 tar -zxvf frp.xxx.tar.gz
 
@@ -23,9 +19,9 @@ systemctl enable frps.service
 systemctl start frps.service
 ```
 
-#### 配置文件参数
+### 配置文件参数
 
-```
+```shell
 [common]
 bind_addr = 0.0.0.0 #绑定IP
 bind_port = 7000   #绑定端口
@@ -67,11 +63,11 @@ allow_ports = 2000-3000,3001,3003,4000-50000
 # vhost_http_timeout = 60
 ```
 
-### linux客户端
+## linux客户端
 
-#### 安装配置
+### 安装配置
 
-```
+```shell
 #下载解压
 tar -zxvf frp.xxx.tar.gz
 
@@ -88,9 +84,9 @@ systemctl enable frpc.service
 systemctl start frpc.service
 ```
 
-#### 配置文件参数
+### 配置文件参数
 
-```
+```shell
 [common]
 server_addr = 127.0.0.1 #frp服务器地址(IP或者域名)
 server_port = 7000 #frp绑定端口
@@ -106,7 +102,7 @@ remote_port = 6000 #远程转发端口(服务端需开放该端口，不然会�
 
 **示例:**
 
-```
+```shell
 [common]
 server_addr = jklash.com
 server_port = 7000
@@ -121,6 +117,6 @@ remote_port = 10000
 
 远程可通过10000端口进行ssh连接
 
-```
+```shell
 ssh -p 10000 root@jklash.com
 ```

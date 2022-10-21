@@ -1,5 +1,3 @@
-# kubernetes
-
 ## 基本概念
 
 ### 名词解释
@@ -146,13 +144,13 @@ Pod 要能够相互通信，Kubernetes Cluster 必须部署 Pod 网络，flannel
 
 临时关闭
 
-```
+```shell
 sudo swapoff -a
 ```
 
 永久关闭
 
-```
+```shell
 sudo vim /etc/fstab
 ## 注释
 #/swap.img      none    swap    sw      0       0
@@ -160,7 +158,7 @@ sudo vim /etc/fstab
 
 ### 安装kubeadm kubeadm kubectl（国内源）
 
-```
+```shell
 sudo apt-get update && sudo apt-get install -y ca-certificates curl 
 curl -s https://mirrors.aliyun.com/kubernetes/apt/doc/apt-key.gpg | sudo apt-key add -
 
@@ -174,7 +172,7 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 使用脚本一键下载并更名
 
-```
+```shell
 #!/usr/bin/env bash
 
 docker image pull "registry.cn-hangzhou.aliyuncs.com/google_containers/coredns:1.8.0"
@@ -193,7 +191,7 @@ done
 
 ### 初始化Master
 
-```
+```shell
 kubeadm init --apiserver-advertise-address [k8s-master ip] --pod-network-cidr=10.244.0.0/16
 ```
 
@@ -211,7 +209,7 @@ kubeadm init --apiserver-advertise-address [k8s-master ip] --pod-network-cidr=10
 
 ### 配置kubectl
 
-```
+```shell
 mkdir -p $HOME/.kubesudo 
 cp -i /etc/kubernetes/admin.conf $HOME/.kube/configsudo 
 chown $(id -u):$(id -g) $HOME/.kube/config
@@ -225,7 +223,7 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc
 
 **logs：查看POD或容器的日志**
 
-```
+```shell
 #查看POD中所有容器的日志
 kubectl logs nginxpod
 
@@ -238,7 +236,7 @@ kubectl logs -n test mysqlpod -c mysql
 
 **describe：显示资源运行状态信息**
 
-```
+```shell
 kubectl describe pod <Pod Name>
 
 #查看指定名称空间的POD
@@ -249,7 +247,7 @@ kubectl describe pod kube-flannel-ds-v0p3x --namespace=kube-system
 
 **exec：在POD中执行命令**
 
-```
+```shell
 #此方式只适用于POD只有一个容器时
 kubectl exec -it nginxpod -- /bin/bash
 
@@ -263,39 +261,39 @@ kubectl exec nfs -- sh -c "echo 'GET testkey' | redis-cli"
 
 **查看资源类型**
 
-```
+```shell
 kubectl api-resouurce
 ```
 
 **查看名称空间**
 
-```
+```shell
 kubectl get namespaces
 ```
 
 **查看节点状态**
 
-```
+```shell
 #在master上执行
  kubectl get nodes
 ```
 
 **查看pod状态**
 
-```
+```shell
 kubectl get pod --all-namespaces
 kubectl get po -A
 ```
 
 ### 部署flannel
 
-```
+```shell
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```
 
 国内镜像仓库手动下载flannel
 
-```
+```shell
 docker pull registry.cn-hangzhou.aliyuncs.com/k8sos/flannel:v0.14.0
 ```
 
@@ -303,13 +301,13 @@ docker pull registry.cn-hangzhou.aliyuncs.com/k8sos/flannel:v0.14.0
 
 **查看现有token**
 
-```
+```shell
 kubeadm token list
 ```
 
 **生成一个新token**
 
-```
+```shell
 kubeadm token create --print-join-command
 //默认有效期24小时,若想久一些可以结合--ttl参数,设为0则用不过期
 kubeadm token create --ttl 0
@@ -317,13 +315,13 @@ kubeadm token create --ttl 0
 
 **查看ca证书的hash**
 
-```
+```shell
 openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | openssl dgst -sha256 -hex | sed 's/^.* //'
 ```
 
 **node加入Master**
 
-```
+```shell
 kubeadm join [k8s-master ip]:6443 --token [token] --discovery-token-ca-cert-hash [ca cert]
 ```
 
@@ -335,7 +333,7 @@ kubeadm join [k8s-master ip]:6443 --token [token] --discovery-token-ca-cert-hash
 
 **查看节点状态**
 
-```
+```shell
 #在master上执行
 kubectl get nodes
 #都处于ready状态，说明node节点已可用
@@ -343,14 +341,14 @@ kubectl get nodes
 
 **查看pod状态**
 
-```
+```shell
 kubectl get pod --all-namespaces
 kubectl get po -A
 ```
 
 **查看pod运行情况**
 
-```
+```shell
 kubectl describe pod kube-flannel-ds-v0p3x --namespace=kube-system
 #如果镜像已经都下载好还没处于ready状态，可尝试重启容器服务systemctl restart docker
 ```
@@ -361,31 +359,31 @@ kubectl describe pod kube-flannel-ds-v0p3x --namespace=kube-system
 
 使用适当的凭证与控制平面节点通信，运行：
 
-```
+```shell
 kubectl drain <node name> --delete-local-data --force --ignore-daemonsets
 ```
 
 在删除节点之前，请重置 kubeadm 安装的状态：
 
-```
+```shell
 kubeadm reset
 ```
 
 重置过程不会重置或清除 iptables 规则或 IPVS 表。如果你希望重置 iptables，则必须手动进行：
 
-```
+```shell
 iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X
 ```
 
 如果要重置 IPVS 表，则必须运行以下命令：
 
-```
+```shell
 ipvsadm -C
 ```
 
 现在删除节点：
 
-```
+```shell
 kubectl delete node <node name>
 ```
 
@@ -397,7 +395,7 @@ kubectl delete node <node name>
 
 master先下载nginx镜像
 
-```
+```shell
 kubectl create deployment NAME --image=image -- [COMMAND] [args...] [options]
 kubectl create deployment nginx --image="nginx:1.18.0"
 #或者
@@ -406,13 +404,13 @@ kubectl run deployment nginx --image="nginx:1.21.1"
 
 **删除应用**
 
-```
+```shell
 kubectl delete deployment/nginx
 ```
 
 **查看pod**
 
-```
+```shell
 kubectl get pods
 #查看详细信息
 kubectl describe pod
@@ -420,7 +418,7 @@ kubectl describe pod
 
 **删除pod**
 
-```
+```shell
 kubectl delete pods
 
 #删除所有POD
@@ -432,19 +430,19 @@ kubectl delete pods nginxpod demoapp
 
 **查看容器调度**
 
-```
+```shell
 kubectl get pods -o wide
 ```
 
 **拓展实例**
 
-```
+```shell
 kubectl scale deployment nginx --replicas=3
 ```
 
 **查看ReplicaSet**
 
-```
+```shell
 kubectl get replicaset
 ```
 
@@ -454,7 +452,7 @@ kubectl get replicaset
 
 常用字段：
 
-```
+```shell
 apiVersion: apps/v1    # API群组及版本
 kind: Deployment       # 资源类型特有标识
 metadata:
@@ -478,6 +476,6 @@ spec:
 
 执行apply命令运行
 
-```
+```shell
 kubectl apply -f deployment.yml
 ```

@@ -1,5 +1,3 @@
-## g_log日志重定向到文件
-
 ```c
 #include <stdio.h>
 #include <glib.h>

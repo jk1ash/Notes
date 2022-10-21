@@ -1,5 +1,3 @@
-# autotools流程
-
 ## Autotools官方文档
 
 [https://www.gnu.org/software/autoconf/manual/autoconf-2.63/html_node/index.html#Top](https://www.gnu.org/software/autoconf/manual/autoconf-2.63/html_node/index.html#Top)
@@ -268,6 +266,260 @@ test_SOURCES = test.c
 3.为test附加编译选项
 
 4.为test链接附加库
+## 六、国际化：
+### 1.修改源码
+
+#### a.添加头文件
+
+```cpp
+#include <glib/gi18n.h>
+#include "config.h"
+```
+
+#### b.在main()函数中加入如下语句
+
+```cpp
+setlocale(LC_ALL,"");
+bindtextdomain (PACKAGE, LOCALEDIR);
+textdomain (PACKAGE);
+```
+
+#### c.使用_()宏将需要翻译的字符串包含起来:
+
+```cpp
+printf(_(“hello world!\n”));
+```
+
+### 2.修改configure.ac文件
+
+```
+AM_GNU_GETTEXT_VERSION([0.17])
+AM_GNU_GETTEXT([external])
+```
+
+可先用`gettext -V`查看gettext的版本
+
+a.使用的 gettext 版本
+
+b.使用外部 gettext 库
+
+c.添加这两句后执行
+
+```
+automake --add-missing --copy
+```
+
+会在build-aux 目录中生成 config.guess, config.sub 文件。
+
+### 3. 修改 src/Makefile.am 链需要的库
+
+```
+AM_CPPFLAGS = -DLOCALEDIR=\"$(localedir)\"
+```
+
+### 4.执行 gettextize --copy
+
+a. 这将会把gettextize需要的基础文件拷贝到当前目录,包括 po,
+
+m4 目录， ABOUT-NLS, build-aux/config.rpath 文件。
+
+b. gettextize 会修改 configure.ac
+
+将：
+
+```
+AC_CONFIG_FILES([Makefile src/Makefile])
+```
+
+改为：
+
+```
+AC_CONFIG_FILES([Makefile src/Makefile po/Makefile.in])
+```
+
+c. gettextize 会修改 itep-monitorhotplug 目录下的
+
+Makefile.am
+
+将 ：
+
+```
+SUBDIRS = src
+```
+
+改为 ：
+
+```
+SUBDIRS = po src
+ACLOCAL_AMFLAGE = -I m4
+EXTRA_DIST = config.rpath
+```
+
+d. gettextize 会修改 ChangeLog 文件
+
+### 5.把 po/Makevars.template 重命名 po/Makevars
+
+### 6.往 po/POTFILES.in 中添加需要翻译的文件路径
+
+```
+src/demo.c
+```
+
+### 7. 执行 autoreconf -ivf
+
+### 8. 执行./configure
+
+### 9.在 po 目录下行 执行 make
+
+在 po 目录下就会生成 xxx.pot。
+
+### 10. 本地化翻译
+
+在 po 目录下执行 msginit -l zh_CN 就会生成 zh_CN.po,编辑该文件。
+
+```
+"Content-Type: text/plain; charset=UTF-8\n"
+#: src/demo.c:5
+msgid "hello world"
+msgstr "你好世界"
+```
+
+### 11.告诉gettext我们完成了zh_CN的翻译
+
+在 po 目录下新建 LINGUAS 文件,并在文件中写入： zh_CN
+
+### 12.返回上级目录，执行./configure
+
+### 13.在po目录下执行 make update-po
+
+生成 zh_CN.gmo
+
+### 14.po和mo互相转换
+
+```
+# 先安装gettext
+apt-get install gettext
+
+# po->mo  
+msgfmt  *.po -o *.mo
+
+# mo->po
+msgunfmt *.mo -o *.po
+```
+## 七、拆分库
+### 1.src下(或其他目录,以src为例)添加xxx.pc.in文件
+
+```
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+datarootdir=@datarootdir@
+datadir=@datadir@
+includedir=@includedir@/name #头文件的名称
+
+#so名称需和libname这个一致
+Name: libname 
+Description:
+Version: @VERSION@
+Requires:
+#name去掉lib
+Libs: -L${libdir} -lname
+Cflags: -I${includedir}
+```
+
+### 2.修改 configure.ac
+
+添加用于编译pc.in
+
+```
+AC_CONFIG_FILES([src/xxx.pc])
+```
+
+### 3.修改 src/Makefile.am
+
+添加用于编译pc.in文件
+
+```
+pkgconfigdir = $(libdir)/pkgconfig
+pkgconfig_DATA = xxx.pc
+```
+
+#### 4.debian下添加.install和dev.install文件
+
+.install文件为 pkgname.install
+
+dev.install文件为 pkgname-dev.install
+
+如需要添加测试目录，则添加pkgname-test.install
+
+```
+#.install
+
+usr/lib/*/*.so.*
+
+#dev.install
+
+usr/lib/*/*.so
+usr/lib/*/pkgconfig/
+usr/include/
+
+#test.install
+/usr/bin
+```
+
+### 5.修改debian/control
+
+添加
+
+```
+Package: pkgname
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+<insert long description, indented with spaces>
+
+Package: pkgname-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends}, pkg-config, ${misc:Depends}
+Description: <insert up to 60 chars description>
+<insert long description, indented with spaces>
+
+#需要添加测试包的话
+Package: pkgname-test
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends}, pkg-config, ${misc:Depends}
+Description: <insert up to 60 chars description>
+<insert long description, indented with spaces>
+```
+
+## 6.引用该库
+
+### a.通过pc文件调用(推荐)
+
+```
+#先在configure.ac中添加，注意pcname需一致
+
+PKG_CHECK_MODULES(LIBXXX, pcname)
+AC_SUBST(LIBXXX_CFLAGS)
+AC_SUBST(LIBXXX_LIBS)
+
+#在Makefile.am中引用
+XXX_CFLAGS = \
+        $(LIBXXX_CFLAGS)
+XXX_LDADD = \
+        $(LIBXXX_LIBS)
+```
+
+### b.直接调用so库,solibname需和so库名称一致
+
+```
+#在Makefile.am中引用
+installtool_LDADD = \
+    -lsolibname
+```
+
 
 ## 附录：常用安装目录变量
 

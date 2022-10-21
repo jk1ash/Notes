@@ -1,5 +1,3 @@
-# Linux常用命令收集
-
 ## terminal快捷建
 
 ```

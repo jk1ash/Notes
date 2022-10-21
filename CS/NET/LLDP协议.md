@@ -1,5 +1,3 @@
-# LLDP
-
 ## 定义：
 
 **链路层发现协议**（Link Layer Discovery Protocol，LLDP）是一种数据链路层协议，网络设备可以通过在本地网络中发送LLDPDU（Link Layer Discovery Protocol Data Unit）来通告其他设备自身的状态。是一种能够使网络中的设备互相发现并通告状态、交互信息的协议。

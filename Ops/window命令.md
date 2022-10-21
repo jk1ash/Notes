@@ -14,17 +14,11 @@
 - perfmon.msc   打开性能监视器
 - netplwiz  打开用户账户
 
-## 命令行
-
-sconfig 系统配置（仅支持server）
-
 ## wsl设置
 
-官方文档
+[官方文档](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package)
 
-[https://docs.microsoft.com/zh-cn/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package](https://docs.microsoft.com/zh-cn/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package)
-
-```
+```powershell
 #启用wsl
 Enable-WindowsOptionalFeature  -Online  -FeatureName  VirtualMachinePlatform
 Enable-WindowsOptionalFeature  -Online  -FeatureName  Microsoft-Windows-Subsystem-Linux

@@ -1,5 +1,3 @@
-# Linux启动过程
-
 ## x86架构
 
 1. BIOS/UEFI

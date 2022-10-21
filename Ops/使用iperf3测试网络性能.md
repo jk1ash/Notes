@@ -1,9 +1,3 @@
-# 使用iperf3测试网络性能
-
-## GitHub
-
-[iperf3](https://github.com/esnet/iperf)
-
 ## 常用参数
 
 ### 通用

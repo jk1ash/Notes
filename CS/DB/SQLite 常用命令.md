@@ -1,8 +1,6 @@
-# SQLite 常用命令
-
 ## 安装/连接
 
-```
+```shell
 > apt-get install sqlite3 # ubuntu
 > sqlite3 -version # 查看版本
 3.22.0 ...
@@ -16,7 +14,7 @@ sqlite> .help # 帮助文档
 
 ## 数据库操作
 
-```
+```shell
 > .help # 显示帮助文档
 ...
 > .databases # 显示数据库名称及对应文件
@@ -31,7 +29,7 @@ main: /tmp/gee.db
 
 ## 表操作
 
-```
+```sql
 > .table # 查看所有的表
 users books
 > .schema users # 显示CREATE语句
@@ -46,7 +44,7 @@ Jack|20
 
 ## 输出模式
 
-```
+```sql
 > .mode csv # 设置输出模式为 csv
 > select * from users
 name,age
@@ -63,7 +61,7 @@ INSERT INTO "table"(name,age) VALUES('Jack',20);
 
 ### 创建表
 
-```
+```sql
 CREATE TABLE tab_name (
    col1 col1_type PRIMARY KEY,
    col2 INTEGER AUTOINCREMENT,,
@@ -84,7 +82,7 @@ PRIMARY KEY 标记主键，NOT NULL标记非空。AUTOINCREMENT 自增，只能�
 
 ### 删除/更新表
 
-```
+```sql
 -- 删除表
 DROP TABLE tab_name;
 -- 新增列
@@ -109,7 +107,7 @@ INSERT INTO tab_name (col1, col2, col3) VALUES
 
 ### 查询记录
 
-```
+```sql
 -- 所有列
 SELECT * FROM tab_name;
 -- 去除重复
@@ -139,7 +137,7 @@ SELECT * FROM table_name ORDER BY col2 DESC;
 
 ### 删除/更新记录
 
-```
+```sql
 -- 删除满足条件的记录
 DELETE FROM tab_name WHERE condition;
 -- 更新记录
@@ -152,7 +150,7 @@ UPDATE tab_name
 
 ### 事务(Transaction)
 
-```
+```sql
 -- 提交
 BEGIN;
 INSERT INTO ...

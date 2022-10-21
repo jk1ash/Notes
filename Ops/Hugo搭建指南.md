@@ -1,5 +1,3 @@
-本博客已由Hugo移至Typecho，本教程仅做备份
-
 Hugo是一个基于golang的静态博客框架，和Hexo类似
 
 ## 安装

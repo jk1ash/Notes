@@ -1,10 +1,8 @@
-# docker学习笔记
-
 ## 安装
 
 ### 本地安装
 
-```bash
+```shell
 # install tools for install key
 sudo apt-get -y install \
      apt-transport-https \
@@ -34,19 +32,19 @@ apt -y install docker-ce docker-ce-cli containerd.io
 
 ### 使用官方脚本安装
 
-```
-curl -fsSL https://get.docker.com | bash -s docker
+```shell
+curl -fsSL https://get.docker.com | shell -s docker
 ```
 
 ### 安装docker-compose
 
-```
+```shell
 apt-get install docker-compose
 ```
 
 ## 使用阿里云镜像加速器
 
-```bash
+```shell
 sudo mkdir -p /etc/docker
 vim  /etc/docker/daemon.json
 
@@ -66,7 +64,7 @@ sudo systemctl restart docker
 
 ### 使用腾讯云镜像加速器
 
-```bash
+```shell
 sudo mkdir -p /etc/docker
 vim  /etc/docker/daemon.json
 
@@ -83,7 +81,7 @@ sudo systemctl restart docker
 
 ### docker解除sudo限制
 
-```bash
+```shell
 sudo usermod -aG docker $USER
 newgrp docker
 sudo systemctl restart docker
@@ -91,7 +89,7 @@ sudo systemctl restart docker
 
 ## 常用命令
 
-```bash
+```shell
 #查看本地镜像
 docker images
 
@@ -136,7 +134,7 @@ docker container prune
 
 ## Dockerfile常用指令
 
-```
+```dockerfile
 FROM
 指定 base 镜像。
 
@@ -207,7 +205,7 @@ Shell 格式
 
 例如：
 
-```
+```dockerfile
 RUN apt-get install python3 
 
 CMD echo "Hello world" 
@@ -219,7 +217,7 @@ ENTRYPOINT echo "Hello world"
 
 例如下面的 Dockerfile 片段：
 
-```
+```dockerfile
 ENV name Cloud Man 
 
 ENTRYPOINT echo "Hello, $name"
@@ -241,7 +239,7 @@ Exec 格式
 
 例如：
 
-```
+```dockerfile
 RUN ["apt-get", "install", "python3"] 
 
 CMD ["/bin/echo", "Hello world"] 
@@ -252,7 +250,7 @@ ENTRYPOINT ["/bin/echo", "Hello world"]
 当指令执行时，会直接调用 `<command>`，不会被 shell 解析。
 例如下面的 Dockerfile 片段：
 
-```
+```dockerfile
 ENV name Cloud Man 
 
 ENTRYPOINT ["/bin/echo", "Hello, $name"]
@@ -260,14 +258,14 @@ ENTRYPOINT ["/bin/echo", "Hello, $name"]
 
 运行容器将输出：
 
-```
+```shell
 Hello, $name
 ```
 
 注意环境变量“name”没有被替换。
 如果希望使用环境变量，照如下修改
 
-```
+```dockerfile
 ENV name Cloud Man 
 
 ENTRYPOINT ["/bin/sh", "-c", "echo Hello, $name"]
@@ -275,7 +273,7 @@ ENTRYPOINT ["/bin/sh", "-c", "echo Hello, $name"]
 
 运行容器将输出：
 
-```
+```shell
 Hello, Cloud Man
 ```
 
@@ -289,7 +287,7 @@ RUN 在当前镜像的顶部执行命令，并通过创建新的镜像层。Dock
 
 RUN 有两种格式：
 
-```
+```shell
 Shell 格式：RUN
 
 Exec 格式：RUN ["executable", "param1", "param2"]
@@ -297,7 +295,7 @@ Exec 格式：RUN ["executable", "param1", "param2"]
 
 下面是使用 RUN 安装多个包的例子：
 
-```
+```dockerfile
 RUN apt-get update && apt-get install -y \ 
 
 bzr \
@@ -317,7 +315,7 @@ CMD 指令允许用户指定容器的默认执行的命令。
 
 此命令会在容器启动且 docker run 没有指定其他命令时运行。
 
-```
+```shell
 1. 如果 docker run 指定了其他命令，CMD 指定的默认命令将被忽略。
 
 2. 如果 Dockerfile 中有多个 CMD 指令，只有最后一个 CMD 有效。
@@ -342,7 +340,7 @@ ENTRYPOINT 看上去与 CMD 很像，它们都可以指定要执行的命令及�
 
 ENTRYPOINT 有两种格式：
 
-```
+```shell
 1. Exec 格式：ENTRYPOINT ["executable", "param1", "param2"] 这是 ENTRYPOINT 的推荐格式。
 
 2. Shell 格式：ENTRYPOINT command param1 param2
@@ -358,7 +356,7 @@ ENTRYPOINT 中的参数始终会被使用，而 CMD 的额外参数可以在容�
 
 比如下面的 Dockerfile 片段：
 
-```
+```dockerfile
 ENTRYPOINT ["/bin/echo", "Hello"] 
 
 CMD ["world"]
@@ -403,7 +401,7 @@ ENTRYPOINT 的 Shell 格式会忽略任何 CMD 或 docker run 提供的参数。
 
 除了 none, host, bridge 这三个自动创建的网络，用户也可以根据业务需要创建 user-defined 网络。Docker 提供三种 user-defined 网络驱动：bridge, overlay 和 macvlan。overlay 和 macvlan 用于创建跨主机的网络。
 
-```
+```shell
 docker network create --driver bridge my_net
 ```
 
@@ -417,7 +415,7 @@ docker network create --driver bridge my_net
 
 docker daemon 实现了一个内嵌的 DNS server，使容器可以直接通过“容器名”通信。使用 docker DNS 有个限制：只能在 user-defined 网络中使用。例子：
 
-```
+```shell
 docker run -it --network=my_net --name=bbox1 busybox
 
 docker run -it --network=my_net --name=bbox2 busybox
@@ -427,7 +425,7 @@ docker run -it --network=my_net --name=bbox2 busybox
 
 joined 容器非常特别，它可以使两个或多个容器共享一个网络栈，共享网卡和配置信息，joined 容器之间可以通过 127.0.0.1 直接通信。
 
-```
+```shell
 docker run -it --network=container:test busybox
 ```
 
@@ -452,7 +450,7 @@ docker run -it --network=container:test busybox
 docker logs
 options:
 
-```
+```shell
   -f, --follow         Follow log output
       --since string   Show logs since timestamp (e.g. 2013-01-02T13:23:37Z) or relative (e.g. 42m for 42 minutes)
   -n, --tail string    Number of lines to show from the end of the logs (default "all")
@@ -462,7 +460,7 @@ options:
 
 例子：
 
-```
+```shell
 # 类似tail -f
 docker logs -f containID
 ```

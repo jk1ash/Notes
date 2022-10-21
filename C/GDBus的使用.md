@@ -1,5 +1,3 @@
-# GDBus的使用
-
 > GDBus是glib库调用dbus的接口
 
 

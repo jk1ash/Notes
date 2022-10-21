@@ -1,5 +1,3 @@
-# oh my zsh配置
-
 ## 卸载
 
 ```bash

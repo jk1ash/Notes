@@ -1,4 +1,3 @@
-本博客已由Hexo移至Hugo框架，本教程仅做备份
 ## 1.环境准备
 
 - node.js ([node.js安装教程](https://jklash.com/index.php/archives/12.html))

@@ -1,5 +1,3 @@
-# https原理
-
 ## 原理
 
 HTTPS是在HTTP上建立SSL或TLS加密层，并对传输数据进行加密，是HTTP协议的安全版。

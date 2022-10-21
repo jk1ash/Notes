@@ -1,5 +1,3 @@
-# CUnit单元测试
-
 ## 环境安装
 
 ```
@@ -11,13 +9,12 @@ apt install libcunit1-ncurses libcunit1-ncurses-dev
 ```
 
 ## 四种模式输出简介
-| 模式 | 平台 | 结果输出方式 | 使用的接口函数 | 介绍 |
-| --- | --- | --- | --- | --- |
-| Basic | 所有 | 标准输出 | #include "CUnit/Basic.h"CU_basic_set_mode(CU_BRM_VERBOSE);CU_basic_run_tests(); | 结果输出到标准输出（stdout） |
-| Automated | 所有 | xml文件 | #include "CUnit/Automated.h"CU_set_output_filename("result"); CU_list_tests_to_file();CU_automated_run_tests(); | 生成XML文件 |
-| Console | 所有 | 交互式控制台 | #include "CUnit/Console.h"CU_console_run_tests(); | 比较灵活，可以选择只执行其中某一个测试用例 |
-| Curses | Linux/Unix | 交互式curses窗口 | #include "CUnit/CUCurses.h"CU_curses_run_tests(); | 跟Console类似，只不过是以Curses窗口的方式展示 |
-
+| 模式      | 平台       | 结果输出方式     | 使用的接口函数                                                                                                   | 介绍                                          |
+| --------- | ---------- | ---------------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| Basic     | 所有       | 标准输出         | \#include "CUnit/Basic.h"CU_basic_set_mode(CU_BRM_VERBOSE);CU_basic_run_tests();                                 | 结果输出到标准输出（stdout）                  |
+| Automated | 所有       | xml文件          | \#include "CUnit/Automated.h"CU_set_output_filename("result"); CU_list_tests_to_file();CU_automated_run_tests(); | 生成XML文件                                   |
+| Console   | 所有       | 交互式控制台     | \#include "CUnit/Console.h"CU_console_run_tests();                                                               | 比较灵活，可以选择只执行其中某一个测试用例    |
+| Curses    | Linux/Unix | 交互式curses窗口 | \#include "CUnit/CUCurses.h"CU_curses_run_tests();                                                               | 跟Console类似，只不过是以Curses窗口的方式展示 |
 
 注：Automated模式生成完XML文件之后，然后再将CUnit-List.dtd、CUnit-List.xsl、CUnit-Run.dtd、CUnit-Run.xsl（这几个文件在CUnit的源码包可以找到，在/usr/share/CUnit/目录下）和XML文件放到同一级目录，再用浏览器打开，就可以看到界面了。
 
@@ -154,11 +151,11 @@ int main(int argc, char const *argv[])
 | CU_ASSERT(int  expression)CU_ASSERT_FATAL(int  expression)CU_TEST(int  expression)CU_TEST_FATAL(int  expression) | 断言表达式为TRUE（非零） |
 | CU_ASSERT_TRUE(value)CU_ASSERT_TRUE_FATAL(value) | 断言值为真（非零） |
 | CU_ASSERT_FALSE(value)CU_ASSERT_FALSE_FATAL(value) | 断言值为假（零） |
-| CU_ASSERT_EQUAL(actual, expected)CU_ASSERT_EQUAL_FATAL(actual, expected) | 断言实际值==期望值 |
+| CU_ASSERT_EQUAL(actual, expected)CU_ASSERT_EQUAL_FATAL(actual, expected) | 断言实际值\=\=期望值 |
 | CU_ASSERT_NOT_EQUAL(actual, expected))CU_ASSERT_NOT_EQUAL_FATAL(actual, expected) | 断言实际值!=期望值 |
-| CU_ASSERT_PTR_EQUAL(actual, expected)CU_ASSERT_PTR_EQUAL_FATAL(actual, expected) | 断言指针实际==期待 |
+| CU_ASSERT_PTR_EQUAL(actual, expected)CU_ASSERT_PTR_EQUAL_FATAL(actual, expected) | 断言指针实际\=\=期待 |
 | CU_ASSERT_PTR_NOT_EQUAL(actual, expected)CU_ASSERT_PTR_NOT_EQUAL_FATAL(actual, expected) | 断言指针实际!=期待 |
-| CU_ASSERT_PTR_NULL(value)CU_ASSERT_PTR_NULL_FATAL(value) | 指针值==NULL |
+| CU_ASSERT_PTR_NULL(value)CU_ASSERT_PTR_NULL_FATAL(value) | 指针值\=\=NULL |
 | CU_ASSERT_PTR_NOT_NULL(value)CU_ASSERT_PTR_NOT_NULL_FATAL(value) | 指针值!=NULL |
 | CU_ASSERT_STRING_EQUAL(actual, expected)CU_ASSERT_STRING_EQUAL_FATAL(actual, expected) | 断言实际字符串与预期字符串相等 |
 | CU_ASSERT_STRING_NOT_EQUAL(actual, expected)CU_ASSERT_STRING_NOT_EQUAL_FATAL(actual, expected) | 断言实际字符串与预期字符串不等 |

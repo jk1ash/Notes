@@ -1,5 +1,3 @@
-# getopt_long函数
-
 ## 描述
 
 getopt_long()是一种函数，被用来解析命令行选项参数。与getopt相比，支持长选项的参数输入。
