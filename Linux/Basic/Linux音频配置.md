@@ -333,9 +333,6 @@ mos值经主要受声卡芯片调教和音量大小影响；offset值主要受�
 | 90  | 90  | 22       | 4.49-4.51 |
 根据上述对照表格，可查看到开启micboost一级的情况下，音质为4.45-4.51上下；关闭micboost的情况下，音质为4.35-4.45。具体调试时可借助alsa工具`alsamixer`进行调节，来达到较好音质。
 ### 时延
-公式:
-$buffer\_size = period\_size \times periods$
-
 **减小buffer_size的方式：**
 1. 修改alsa的默认配置， 在启用pulse的情况下无效
 修改 /usr/share/alsa/pcm/dmix.conf, /usr/share/alsa/pcm/dsnoop.conf
