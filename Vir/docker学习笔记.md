@@ -33,7 +33,7 @@ apt -y install docker-ce docker-ce-cli containerd.io
 ### 使用官方脚本安装
 
 ```shell
-curl -fsSL https://get.docker.com | shell -s docker
+curl -fsSL https://get.docker.com | sh -s docker
 ```
 
 ### 安装docker-compose
