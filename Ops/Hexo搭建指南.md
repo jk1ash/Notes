@@ -138,70 +138,79 @@ Github Action添加workflow，添加yml脚本，如下所示
 GitHub Action工作流示例
 
 ```yaml
-name: Deploy Hexo # 部署Hexo
+name: Deploy Hexo
 
-on: # 触发条件
-push:
-branches:
+on:
 
-- main # 推送到 main 分支
+  push:
 
-release:
-types:
+    branches:
 
-- published # 推送新版本号
-
-workflow_dispatch: # 手动触发
+      - master
 
 jobs:
-build:
-runs-on: ubuntu-latest
 
-steps:
+  deploy:
 
-- name: Checkout # Checkout 仓库
-  uses: actions/checkout@v2
-  with:
-  ref: main
-- name: Setup Node # 安装 Node.js
-  uses: actions/setup-node@v2
-  with:
-  node-version: "14.x"
-- name: Install Hexo # 安装 Hexo
-  run: |
-  npm install hexo-cli -g
-  npm install hexo --save
-  npm install hexo-deployer-git --save
-- name: Cache Modules # 缓存 Node 插件
-  uses: actions/cache@v2
-  id: cache-modules
-  with:
-  path: node_modules
-  key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-- name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件
-  if: steps.cache-modules.outputs.cache-hit != 'true'
-  run: |
-  npm install
-  npm ci
-- name: Generate # 生成
-  run: |
-  hexo clean
-  hexo generate
-- name: Deploy to Github # 部署到Github
-  run: |
-  git config --global user.name "jklash1996"
-  git config --global user.email "jklash1976@gmail.com"
-  export TZ='Asia/Shanghai'
-  hexo deploy
-- name: Deploy to tencent server # 部署到云服务器
-  uses: easingthemes/ssh-deploy@v2.1.5
-  env:
-  ARGS: "-avz --delete"
-  SOURCE: "public/" # 要同步到服务器的目录
-  REMOTE_HOST: ${{ secrets.TENCENT_HOST}} # 服务器 IP 地址
-  REMOTE_USER: ${{ secrets.TENCENT_USER}} # 服务器 SSH 连接用户名
-  SSH_PRIVATE_KEY: ${{ secrets.TENCENT_KEY}} # 配置在服务器上公钥所对应的私钥
-  TARGET: ${{ secrets.TENCENT_PATH}} # 服务器上对应网站的根目录</pre>
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout code
+
+        uses: actions/checkout@v3
+
+        with:
+
+          submodules: "true"
+
+      - name: Install Node.js
+
+        uses: actions/setup-node@v3
+
+        with:
+
+          node-version: "18.x"
+
+      - name: Install Hexo
+
+        run: |
+
+          npm install hexo-cli -g
+
+          npm install hexo --save
+
+          npm install hexo-deployer-git --save
+
+      - name: Install dependencies
+
+        run: |
+
+          npm install
+
+          npm ci
+
+      - name: Generate static files
+
+        run: |
+
+          hexo clean
+
+          hexo generate
+
+      - name: Deploy to GitHub Pages
+
+        uses: peaceiris/actions-gh-pages@v3
+
+        with:
+
+          personal_token: ${{ secrets.GH_TOKEN }}
+
+          publish_dir: ./public
+
+          external_repository: username/username.github.io
+
+          publish_branch: main
 ```
 
 ## 5.常见错误
