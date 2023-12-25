@@ -1,0 +1,189 @@
+{
+  "main": {
+    "id": "027f5fe1cee20e89",
+    "type": "split",
+    "children": [
+      {
+        "id": "04f75cb4723652ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d9976b36780c02c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c4bb8d7e5a8884fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "9fd7ebf1501d3a46",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "27597d4c2b95a853",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d2168e5139405d88",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "81129b060075a499",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "9bcfaa41db5d826a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ac777e4c3a7d4694",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e5624c442466445",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3974d5346974767b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "644a9fa402ecdd7d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "88f771238b5b25a3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f586654430ba97a2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "d6b30812bff2f37c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 282.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": true
+    }
+  },
+  "active": "27597d4c2b95a853",
+  "lastOpenFiles": [
+    "Linux/Shell/Shell 基本运算符.md",
+    "未命名.canvas",
+    "Algori/动态规划.md",
+    "Linux/Basic/pulseaudio学习笔记.md",
+    "Linux/Basic/polkit使用文档.md",
+    "Vir/docker学习笔记.md",
+    "未命名 1.canvas",
+    "Linux/Compile/debian目录配置.md",
+    "Ops/常用配置文件路径.md",
+    "Linux/Compile/Linux编译常见问题.md",
+    "Linux/Compile/autotools流程.md",
+    "Ops/Ubuntu开发环境安装.md",
+    "Linux/Basic/Linux常用命令收集.md",
+    "Linux/Basic/vim常用命令收集.md",
+    "Linux/Basic/Git常用命令收集.md",
+    "Ops/oh my zsh配置.md",
+    "C/GDBus的使用.md",
+    "Ops/Hexo搭建指南.md",
+    "C/CUnit单元测试.md",
+    "Ops/Hugo搭建指南.md",
+    "Ops/Linux下node.js安装.md",
+    "Ops/window命令.md",
+    "Ops/vscode server安装配置.md",
+    "Ops/对象存储挂载.md",
+    "Linux/Basic/Linux音频配置.md",
+    "CS/Basic/死锁.md",
+    "CS/DB/SQLite 常用命令.md",
+    "Cpp/vector.md"
+  ]
+}

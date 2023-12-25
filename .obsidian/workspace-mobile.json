@@ -1,0 +1,152 @@
+{
+  "main": {
+    "id": "fa636dbc16e637a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "29dea765da450de1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31dd78b2dd651cfd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Basic/Git常用命令收集.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "904c63260cbf88d6",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "54163081a137f26c",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "dffc850a93ad01c3",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "2fbc349ef81201af",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "12588a999bc5ab91",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      },
+      {
+        "id": "947cbcbcbd47f461",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "ebe8d2c9239b2b6f",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f03a08c62c63e763",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Linux/Basic/Git常用命令收集.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "ef92394b305bad37",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Linux/Basic/Git常用命令收集.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "709cd4b4f1e2206a",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Linux/Basic/Git常用命令收集.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "31dd78b2dd651cfd",
+  "lastOpenFiles": [
+    "Linux/Basic/Systemd使用文档.md",
+    "Linux/Basic/pulseaudio学习笔记.md",
+    "Linux/Basic/polkit使用文档.md",
+    "Linux/Basic/vim常用命令收集.md",
+    "未命名.md",
+    "Vir/docker学习笔记.md",
+    "C/CUnit单元测试.md",
+    "Ops/frp内网穿透.md"
+  ]
+}
