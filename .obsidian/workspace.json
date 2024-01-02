@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "04f75cb4723652ed",
+        "id": "d2d2bda46d2af70e",
         "type": "tabs",
         "children": [
           {
-            "id": "2d9976b36780c02c",
+            "id": "ed18ed09ade9645e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -135,7 +135,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -156,7 +158,7 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "27597d4c2b95a853",
+  "active": "ed18ed09ade9645e",
   "lastOpenFiles": [
     "Linux/Shell/Shell 基本运算符.md",
     "未命名.canvas",
