@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ops/Ubuntu开发环境安装.md",
+                "file": "Linux/Basic/vim常用命令收集.md",
                 "mode": "preview",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tee",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ops/Ubuntu开发环境安装.md",
+                "file": "Linux/Basic/vim常用命令收集.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ops/Ubuntu开发环境安装.md",
+                "file": "Linux/Basic/vim常用命令收集.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ops/Ubuntu开发环境安装.md"
+                "file": "Linux/Basic/vim常用命令收集.md"
               }
             }
           },
@@ -168,6 +169,7 @@
   },
   "active": "ed18ed09ade9645e",
   "lastOpenFiles": [
+    "Ops/Ubuntu开发环境安装.md",
     "Linux/Shell/Shell 基本运算符.md",
     "未命名.canvas",
     "Algori/动态规划.md",
@@ -179,7 +181,6 @@
     "Ops/常用配置文件路径.md",
     "Linux/Compile/Linux编译常见问题.md",
     "Linux/Compile/autotools流程.md",
-    "Ops/Ubuntu开发环境安装.md",
     "Linux/Basic/Linux常用命令收集.md",
     "Linux/Basic/vim常用命令收集.md",
     "Linux/Basic/Git常用命令收集.md",
