@@ -15,10 +15,11 @@
 1. 修改默认配置00main，添加自定义配置文件
 
 `CARDINFO{driver}=="rockchip_es8316", INCLUDE="es8316", GOTO="init_end"`
-CARDINFO{driver}为声卡名称，
+CARDINFO{driver}为声卡名称，通过`cat /proc/asound/cards`查看
 INCLUDE为指向的配置文件
 2. 自定义配置es8316，可参考同路径的hda进行配置文件编写
-
+CTL{name}为控制器名称，CTL{values}为控制器的值
+可通过alsamixer查看相应的控制器和要设定的默认值
 ```shell
 # Configuration for es8316 driver
 
