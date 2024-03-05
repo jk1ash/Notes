@@ -51,7 +51,7 @@ RESULT="true", EXIT="return"
 - ATTR{subsystem_device}，声卡的subsystem device id
 - GOTO，指向具体配的label
 mixername可使用`alsamixer`，查看chip字段
-pice接口的声卡，先查看具体的pci id，使用`lspci`, 查看Audio device的字样，得到声卡的pci id
+先查看具体的pci id，使用`lspci`, 查看Audio device的字样，得到声卡的pci id
 `00:1f.3` Audio device: Intel Corporation DDevice 4dc8 (rev 01)
 查看`ls /sys/devices/pci0000:00/0000:00:1f.3`， 可看到相应的vendor、device、subsystem_vendor、subsystem_device，使用cat可直接读取id
 
