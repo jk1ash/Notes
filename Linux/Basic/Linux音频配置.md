@@ -15,7 +15,8 @@
 1. 修改默认配置00main，添加自定义配置文件
 
 `CARDINFO{driver}=="rockchip_es8316", INCLUDE="es8316", GOTO="init_end"`
-
+CARDINFO{driver}为声卡名称，
+INCLUDE为指向的配置文件
 2. 自定义配置es8316，可参考同路径的hda进行配置文件编写
 
 ```shell
@@ -74,6 +75,7 @@ CTL{name}="HPMixer Gain", CTL{index}="0", CTL{values}="3,3"
 CTL{name}="Input PGA", CTL{values}="6"
 RESULT="true", EXIT="return"
 ```
+如果想在一个配置中配置多个声卡，已hda为例：
 
 ### cards配置
 
