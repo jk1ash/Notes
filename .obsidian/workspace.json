@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "7df3fbbc4e8d30f6",
+        "id": "2a65c4a47e762ee6",
         "type": "tabs",
         "children": [
           {
-            "id": "6a5bca1a6facab92",
+            "id": "d10e0f48fdf89f84",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Basic/Linux音频配置.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -93,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Basic/Linux音频配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Basic/Linux音频配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Linux/Basic/Linux音频配置.md"
-              }
+              "state": {}
             }
           },
           {
@@ -166,8 +158,9 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "6a5bca1a6facab92",
+  "active": "d10e0f48fdf89f84",
   "lastOpenFiles": [
+    "Linux/Basic/Linux音频配置.md",
     "Linux/Basic/vim常用命令收集.md",
     "Ops/Ubuntu开发环境安装.md",
     "Linux/Shell/Shell 基本运算符.md",
@@ -192,7 +185,6 @@
     "Ops/window命令.md",
     "Ops/vscode server安装配置.md",
     "Ops/对象存储挂载.md",
-    "Linux/Basic/Linux音频配置.md",
     "CS/Basic/死锁.md",
     "CS/DB/SQLite 常用命令.md",
     "Cpp/vector.md"
