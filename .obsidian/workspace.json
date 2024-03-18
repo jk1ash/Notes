@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "11ed417033e3ee68",
+        "id": "a932661b0cca2fdd",
         "type": "tabs",
         "children": [
           {
-            "id": "3beae6b42791e854",
+            "id": "0d34ebfd448a64e0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -160,14 +160,14 @@
   },
   "active": "27597d4c2b95a853",
   "lastOpenFiles": [
-    "Linux/Basic/Git常用命令收集.md",
     "Linux/Basic/Linux音频配置.md",
+    "Linux/Basic/pulseaudio学习笔记.md",
+    "Linux/Basic/Git常用命令收集.md",
     "Linux/Basic/vim常用命令收集.md",
     "Ops/Ubuntu开发环境安装.md",
     "Linux/Shell/Shell 基本运算符.md",
     "未命名.canvas",
     "Algori/动态规划.md",
-    "Linux/Basic/pulseaudio学习笔记.md",
     "Linux/Basic/polkit使用文档.md",
     "Vir/docker学习笔记.md",
     "未命名 1.canvas",

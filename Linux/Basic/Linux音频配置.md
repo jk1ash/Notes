@@ -322,6 +322,7 @@ channel-map = front-left,front-right,rear-left,rear-right,front-center,lfe
 priority = 6
 direction = output
 
+# 混合sink source配置
 [Profile output:analog-stereo+output:hdmi-stereo+output:hdmi-stereo-extra1+input:analog-stereo]
 description = HT5300
 output-mappings = analog-stereo hdmi-stereo-extra1 hdmi-stereo
