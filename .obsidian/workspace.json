@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2a65c4a47e762ee6",
+        "id": "11ed417033e3ee68",
         "type": "tabs",
         "children": [
           {
-            "id": "d10e0f48fdf89f84",
+            "id": "3beae6b42791e854",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -158,8 +158,9 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "d10e0f48fdf89f84",
+  "active": "27597d4c2b95a853",
   "lastOpenFiles": [
+    "Linux/Basic/Git常用命令收集.md",
     "Linux/Basic/Linux音频配置.md",
     "Linux/Basic/vim常用命令收集.md",
     "Ops/Ubuntu开发环境安装.md",
@@ -175,7 +176,6 @@
     "Linux/Compile/Linux编译常见问题.md",
     "Linux/Compile/autotools流程.md",
     "Linux/Basic/Linux常用命令收集.md",
-    "Linux/Basic/Git常用命令收集.md",
     "Ops/oh my zsh配置.md",
     "C/GDBus的使用.md",
     "Ops/Hexo搭建指南.md",
