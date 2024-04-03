@@ -11,8 +11,12 @@
             "id": "fa8b8e1bc0ca9a76",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Ops/Ubuntu开发环境安装.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Ops/Ubuntu开发环境安装.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Ops/Ubuntu开发环境安装.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Ops/Ubuntu开发环境安装.md"
+              }
             }
           },
           {
@@ -160,6 +168,9 @@
   },
   "active": "fa8b8e1bc0ca9a76",
   "lastOpenFiles": [
+    "Linux/Compile/Linux编译常见问题.md",
+    "Linux/Compile/autotools流程.md",
+    "Linux/Compile/debian目录配置.md",
     "Linux/Basic/Linux音频配置.md",
     "Linux/Basic/pulseaudio学习笔记.md",
     "Linux/Basic/Git常用命令收集.md",
@@ -171,10 +182,7 @@
     "Linux/Basic/polkit使用文档.md",
     "Vir/docker学习笔记.md",
     "未命名 1.canvas",
-    "Linux/Compile/debian目录配置.md",
     "Ops/常用配置文件路径.md",
-    "Linux/Compile/Linux编译常见问题.md",
-    "Linux/Compile/autotools流程.md",
     "Linux/Basic/Linux常用命令收集.md",
     "Ops/oh my zsh配置.md",
     "C/GDBus的使用.md",
