@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Compile/autotools流程.md",
+                "file": "Ops/Ubuntu开发环境安装.md",
                 "mode": "preview",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Compile/autotools流程.md",
+                "file": "Ops/Ubuntu开发环境安装.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Compile/autotools流程.md",
+                "file": "Ops/Ubuntu开发环境安装.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Compile/autotools流程.md"
+                "file": "Ops/Ubuntu开发环境安装.md"
               }
             }
           },
@@ -168,11 +168,11 @@
   },
   "active": "fa8b8e1bc0ca9a76",
   "lastOpenFiles": [
-    "Ops/Ubuntu开发环境安装.md",
-    "Linux/Compile/Linux编译常见问题.md",
+    "Linux/Basic/Linux音频配置.md",
     "Linux/Compile/autotools流程.md",
     "Linux/Compile/debian目录配置.md",
-    "Linux/Basic/Linux音频配置.md",
+    "Ops/Ubuntu开发环境安装.md",
+    "Linux/Compile/Linux编译常见问题.md",
     "Linux/Basic/pulseaudio学习笔记.md",
     "Linux/Basic/Git常用命令收集.md",
     "Linux/Basic/vim常用命令收集.md",
