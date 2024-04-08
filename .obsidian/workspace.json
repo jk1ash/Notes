@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ff11f12f6f1a667b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,7 +177,7 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "fa8b8e1bc0ca9a76",
+  "active": "ff11f12f6f1a667b",
   "lastOpenFiles": [
     "Linux/Compile/Linux编译常见问题.md",
     "Linux/Compile/autotools流程.md",
