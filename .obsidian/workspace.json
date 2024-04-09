@@ -11,8 +11,12 @@
             "id": "89ce7145f7925fe6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Basic/polkit使用文档.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "polk",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -69,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -89,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linux/Basic/polkit使用文档.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linux/Basic/polkit使用文档.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Linux/Basic/polkit使用文档.md"
+              }
             }
           },
           {
@@ -158,7 +167,7 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "27597d4c2b95a853",
+  "active": "89ce7145f7925fe6",
   "lastOpenFiles": [
     "Ops/Ubuntu开发环境安装.md",
     "Linux/Basic/Linux音频配置.md",
