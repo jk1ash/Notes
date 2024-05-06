@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5b2ae31a5cd7a3e4",
+        "id": "0b38e6689d61f6d2",
         "type": "tabs",
         "children": [
           {
-            "id": "ebc22e0b2de6793d",
+            "id": "818d53b380d361ea",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -44,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "polk",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -69,8 +69,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -159,8 +158,9 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "ebc22e0b2de6793d",
+  "active": "27597d4c2b95a853",
   "lastOpenFiles": [
+    "Linux/Basic/Git常用命令收集.md",
     "Linux/Basic/polkit使用文档.md",
     "Ops/Ubuntu开发环境安装.md",
     "Linux/Basic/Linux音频配置.md",
@@ -168,7 +168,6 @@
     "Linux/Compile/debian目录配置.md",
     "Linux/Compile/Linux编译常见问题.md",
     "Linux/Basic/pulseaudio学习笔记.md",
-    "Linux/Basic/Git常用命令收集.md",
     "Linux/Basic/vim常用命令收集.md",
     "Linux/Shell/Shell 基本运算符.md",
     "未命名.canvas",
