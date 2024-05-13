@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5d0c3e8a80288c1a",
+        "id": "d4d7dbc85f635797",
         "type": "tabs",
         "children": [
           {
-            "id": "296dc27223f8dd2a",
+            "id": "f6cfafbb3839b370",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -158,7 +158,7 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "296dc27223f8dd2a",
+  "active": "f6cfafbb3839b370",
   "lastOpenFiles": [
     "Ops/oh my zsh配置.md",
     "Linux/Basic/Git常用命令收集.md",
