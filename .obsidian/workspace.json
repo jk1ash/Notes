@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "6ffb255442192730",
+        "id": "5f83133aa537d205",
         "type": "tabs",
         "children": [
           {
-            "id": "5bbb2f0589aeab18",
+            "id": "fe3f49918aec36ab",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Basic/Linux音频配置.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linux/Basic/Linux音频配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Linux/Basic/Linux音频配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Linux/Basic/Linux音频配置.md"
+              }
             }
           },
           {
@@ -158,8 +166,10 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "5bbb2f0589aeab18",
+  "active": "fe3f49918aec36ab",
   "lastOpenFiles": [
+    "Linux/Basic/pulseaudio学习笔记.md",
+    "Huawei Traning/华为软件采购质量管理要求.md",
     "Linux/Basic/Git常用命令收集.md",
     "Ops/oh my zsh配置.md",
     "Linux/Basic/polkit使用文档.md",
@@ -168,7 +178,6 @@
     "Linux/Compile/autotools流程.md",
     "Linux/Compile/debian目录配置.md",
     "Linux/Compile/Linux编译常见问题.md",
-    "Linux/Basic/pulseaudio学习笔记.md",
     "Linux/Basic/vim常用命令收集.md",
     "Linux/Shell/Shell 基本运算符.md",
     "未命名.canvas",
@@ -186,7 +195,6 @@
     "Ops/vscode server安装配置.md",
     "Ops/对象存储挂载.md",
     "CS/Basic/死锁.md",
-    "CS/DB/SQLite 常用命令.md",
-    "Cpp/vector.md"
+    "CS/DB/SQLite 常用命令.md"
   ]
 }
