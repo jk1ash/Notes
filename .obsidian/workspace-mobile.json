@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9027ef3fa2d73876",
+        "id": "a471a233987f6ce9",
         "type": "tabs",
         "children": [
           {
-            "id": "568f7dc9f0fa99d3",
+            "id": "5747a2a2bb36980c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Huawei Traning/模糊测试方法.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,7 +86,9 @@
         "state": {
           "type": "all-properties",
           "state": {
-            "sortOrder": "frequency"
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
           }
         }
       }
@@ -99,6 +105,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "Huawei Traning/模糊测试方法.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -115,6 +122,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "Huawei Traning/模糊测试方法.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -125,7 +133,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "Huawei Traning/模糊测试方法.md"
+          }
         }
       }
     ],
@@ -141,14 +151,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "54163081a137f26c",
+  "active": "5747a2a2bb36980c",
   "lastOpenFiles": [
+    "Huawei Traning/PTES渗透测试.md",
+    "Huawei Traning/模糊测试方法.md",
+    "未命名",
+    "Huawei Traning/产品网络安全红线解读.md",
+    "Huawei Traning/华为采购安全测试要求.md",
+    "Huawei Traning/漏洞管理方法及实践.md",
+    "Huawei Traning/开源管理方法及实践.md",
+    "Huawei Traning/华为软件采购质量管理要求.md",
+    "Huawei Traning",
     "Linux/Basic/Git常用命令收集.md",
     "Linux/Basic/Systemd使用文档.md",
     "Linux/Basic/pulseaudio学习笔记.md",
     "Linux/Basic/polkit使用文档.md",
     "Linux/Basic/vim常用命令收集.md",
-    "未命名.md",
     "Vir/docker学习笔记.md",
     "C/CUnit单元测试.md",
     "Ops/frp内网穿透.md"
