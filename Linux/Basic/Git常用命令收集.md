@@ -394,21 +394,21 @@ git push origin master
 
 ```shell
 #创建某次提交（含）之前的几次提交的patch
-git format-patch 【commit sha1 id】-n
+git format-patch -n [commit sha1 id]
 
 #某两次提交之间的所有patch
-git format-patch 【commit sha1 id】..【commit sha1 id】
+git format-patch [commit sha1 id]..[commit sha1 id]
 
 #创建diff文件的常用方法
-git diff  【commit sha1 id】 【commit sha1 id】 >  【diff文件名】
+git diff [commit sha1 id] [commit sha1 id] >  [diff文件名]
 
 #检查patch/diff是否能正常打入
-git apply --check 【path/to/xxx.patch】
-git apply --check 【path/to/xxx.diff】
+git apply --check [path/to/xxx.patch]
+git apply --check [path/to/xxx.diff]
 
 #打入patch/diff
-git apply 【path/to/xxx.patch】
-git apply 【path/to/xxx.diff】
+git apply [path/to/xxx.patch]
+git apply [path/to/xxx.diff]
 ```
 
 ## 提交规范
