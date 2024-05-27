@@ -30,21 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "9b968f25e4d4e3f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ops/oh my zsh配置.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,15 +179,15 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "9b968f25e4d4e3f9",
+  "active": "27597d4c2b95a853",
   "lastOpenFiles": [
+    "Ops/Ubuntu开发环境安装.md",
+    "Ops/oh my zsh配置.md",
     "Linux/Basic/Linux音频配置.md",
     "Linux/Basic/Git常用命令收集.md",
     "Linux/Basic/pulseaudio学习笔记.md",
     "Huawei Traning/华为软件采购质量管理要求.md",
-    "Ops/oh my zsh配置.md",
     "Linux/Basic/polkit使用文档.md",
-    "Ops/Ubuntu开发环境安装.md",
     "Linux/Compile/autotools流程.md",
     "Linux/Compile/debian目录配置.md",
     "Linux/Compile/Linux编译常见问题.md",
