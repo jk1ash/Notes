@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Basic/Linux音频配置.md",
+                "file": "Linux/Basic/Git常用命令收集.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Basic/Linux音频配置.md",
+                "file": "Linux/Basic/Git常用命令收集.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Basic/Linux音频配置.md"
+                "file": "Linux/Basic/Git常用命令收集.md"
               }
             }
           },
@@ -179,12 +178,12 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "8d6c249da453bed8",
+  "active": "fe3f49918aec36ab",
   "lastOpenFiles": [
+    "Linux/Basic/Linux音频配置.md",
     "Linux/Basic/Git常用命令收集.md",
     "Ops/oh my zsh配置.md",
     "Ops/Ubuntu开发环境安装.md",
-    "Linux/Basic/Linux音频配置.md",
     "Linux/Basic/pulseaudio学习笔记.md",
     "Huawei Traning/华为软件采购质量管理要求.md",
     "Linux/Basic/polkit使用文档.md",
