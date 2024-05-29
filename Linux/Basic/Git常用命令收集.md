@@ -399,6 +399,9 @@ git format-patch -n [commit sha1 id]
 #某两次提交之间的所有patch
 git format-patch [commit sha1 id]..[commit sha1 id]
 
+#某次提交的patch
+git format-patch [commit sha1 id]~1..[commit sha1 id]
+
 #创建diff文件的常用方法
 git diff [commit sha1 id] [commit sha1 id] >  [diff文件名]
 
