@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "docker",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -178,7 +179,7 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "fe3f49918aec36ab",
+  "active": "d2168e5139405d88",
   "lastOpenFiles": [
     "Linux/Basic/Linux音频配置.md",
     "Linux/Basic/Git常用命令收集.md",
