@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vir/docker学习笔记.md",
+                "file": "Linux/Compile/debian目录配置.md",
                 "mode": "preview",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "docker",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,8 +85,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Vir/docker学习笔记.md",
+                "file": "Linux/Compile/debian目录配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Vir/docker学习笔记.md",
+                "file": "Linux/Compile/debian目录配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vir/docker学习笔记.md"
+                "file": "Linux/Compile/debian目录配置.md"
               }
             }
           },
@@ -181,6 +180,9 @@
   },
   "active": "fe3f49918aec36ab",
   "lastOpenFiles": [
+    "Linux/Compile/autotools流程.md",
+    "Linux/Compile/Linux编译常见问题.md",
+    "Vir/docker学习笔记.md",
     "Linux/Basic/Git常用命令收集.md",
     "Linux/Basic/Linux音频配置.md",
     "Ops/oh my zsh配置.md",
@@ -188,14 +190,11 @@
     "Linux/Basic/pulseaudio学习笔记.md",
     "Huawei Traning/华为软件采购质量管理要求.md",
     "Linux/Basic/polkit使用文档.md",
-    "Linux/Compile/autotools流程.md",
     "Linux/Compile/debian目录配置.md",
-    "Linux/Compile/Linux编译常见问题.md",
     "Linux/Basic/vim常用命令收集.md",
     "Linux/Shell/Shell 基本运算符.md",
     "未命名.canvas",
     "Algori/动态规划.md",
-    "Vir/docker学习笔记.md",
     "未命名 1.canvas",
     "Ops/常用配置文件路径.md",
     "Linux/Basic/Linux常用命令收集.md",
