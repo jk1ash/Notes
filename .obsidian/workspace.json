@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "0607f0993ee5f57a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.3"
+              }
+            }
+          },
+          {
             "id": "8d6c249da453bed8",
             "type": "leaf",
             "state": {
@@ -31,7 +41,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,7 +189,7 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "fe3f49918aec36ab",
+  "active": "0607f0993ee5f57a",
   "lastOpenFiles": [
     "Linux/Compile/autotools流程.md",
     "Linux/Compile/Linux编译常见问题.md",
