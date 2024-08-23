@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ef908d5b5309eebd",
+        "id": "65673c1f870af12d",
         "type": "tabs",
         "children": [
           {
-            "id": "a9d2955a037653b3",
+            "id": "85f81b7753618728",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -51,14 +51,6 @@
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
-            }
-          },
-          {
-            "id": "81129b060075a499",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
             }
           },
           {
@@ -158,14 +150,24 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "a9d2955a037653b3",
+  "active": "27597d4c2b95a853",
   "lastOpenFiles": [
+    "CS-Notes/C++/STL容器.md",
+    "CS-Notes/C/指针练习.md",
+    "CS-Notes/NET/基础知识.md",
+    "CS-Notes/DB/基础知识.md",
+    "CS-Notes/OS/基础知识.md",
+    "CS-Notes/Go/基础知识.md",
+    "CS-Notes/OS/进程和线程.md",
+    "CS-Notes/Algori/冒泡排序.md",
+    "CS-Notes/C/基础知识.md",
+    "CS-Notes/C++/基础知识.md",
     "Linux/Basic/Linux音频配置.md",
     "Linux/Basic/Git常用命令收集.md",
     "Linux/Compile/debian目录配置.md",
     "Linux/Compile/autotools流程.md",
     "Linux/Compile/Linux编译常见问题.md",
-    "Vir/docker学习笔记.md",
+    "Linux/Virtualisation/docker学习笔记.md",
     "Ops/oh my zsh配置.md",
     "Ops/Ubuntu开发环境安装.md",
     "Linux/Basic/pulseaudio学习笔记.md",
@@ -174,19 +176,9 @@
     "Linux/Basic/vim常用命令收集.md",
     "Linux/Shell/Shell 基本运算符.md",
     "未命名.canvas",
-    "Algori/动态规划.md",
+    "CS-Notes/Algori/动态规划.md",
     "未命名 1.canvas",
     "Ops/常用配置文件路径.md",
-    "Linux/Basic/Linux常用命令收集.md",
-    "C/GDBus的使用.md",
-    "Ops/Hexo搭建指南.md",
-    "C/CUnit单元测试.md",
-    "Ops/Hugo搭建指南.md",
-    "Ops/Linux下node.js安装.md",
-    "Ops/window命令.md",
-    "Ops/vscode server安装配置.md",
-    "Ops/对象存储挂载.md",
-    "CS/Basic/死锁.md",
-    "CS/DB/SQLite 常用命令.md"
+    "Linux/Basic/Linux常用命令收集.md"
   ]
 }
