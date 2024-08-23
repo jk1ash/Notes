@@ -11,8 +11,12 @@
             "id": "85f81b7753618728",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CS-Notes/Algori/冒泡排序.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CS-Notes/Algori/冒泡排序.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CS-Notes/Algori/冒泡排序.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CS-Notes/Algori/冒泡排序.md"
+              }
             }
           },
           {
@@ -150,8 +158,10 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "27597d4c2b95a853",
+  "active": "85f81b7753618728",
   "lastOpenFiles": [
+    "CS-Notes/Algori/快速排序.md",
+    "CS-Notes/Algori/冒泡排序.md",
     "CS-Notes/C++/STL容器.md",
     "CS-Notes/C/指针练习.md",
     "CS-Notes/NET/基础知识.md",
@@ -159,7 +169,6 @@
     "CS-Notes/OS/基础知识.md",
     "CS-Notes/Go/基础知识.md",
     "CS-Notes/OS/进程和线程.md",
-    "CS-Notes/Algori/冒泡排序.md",
     "CS-Notes/C/基础知识.md",
     "CS-Notes/C++/基础知识.md",
     "Linux/Basic/Linux音频配置.md",
@@ -178,7 +187,6 @@
     "未命名.canvas",
     "CS-Notes/Algori/动态规划.md",
     "未命名 1.canvas",
-    "Ops/常用配置文件路径.md",
-    "Linux/Basic/Linux常用命令收集.md"
+    "Ops/常用配置文件路径.md"
   ]
 }
