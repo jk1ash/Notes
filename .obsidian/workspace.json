@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "dfa0b1db00136a00",
+        "id": "51202125b930ddfc",
         "type": "tabs",
         "children": [
           {
-            "id": "ded6338b0511654c",
+            "id": "c360256ea1bf6740",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -81,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS-Notes/Algori/冒泡排序.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS-Notes/Algori/冒泡排序.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CS-Notes/Algori/冒泡排序.md"
-              }
+              "state": {}
             }
           },
           {
@@ -154,8 +150,14 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "27597d4c2b95a853",
+  "active": "c360256ea1bf6740",
   "lastOpenFiles": [
+    "Linux/Compile/Ubuntu开发环境安装.md",
+    "Linux/Basic/Linux常用命令收集.md",
+    "Linux/Basic/Git常用命令收集.md",
+    "Linux/Basic/Linux磁盘管理.md",
+    "Linux/Compile/Linux编译常见问题.md",
+    "Linux/Compile/debian目录配置.md",
     "CS-Notes/Algori/快速排序.md",
     "CS-Notes/Algori/冒泡排序.md",
     "CS-Notes/C++/STL容器.md",
@@ -168,21 +170,15 @@
     "CS-Notes/C/基础知识.md",
     "CS-Notes/C++/基础知识.md",
     "Linux/Basic/Linux音频配置.md",
-    "Linux/Basic/Git常用命令收集.md",
-    "Linux/Compile/debian目录配置.md",
     "Linux/Compile/autotools流程.md",
-    "Linux/Compile/Linux编译常见问题.md",
     "Linux/Virtualisation/docker学习笔记.md",
     "Ops/oh my zsh配置.md",
-    "Ops/Ubuntu开发环境安装.md",
     "Linux/Basic/pulseaudio学习笔记.md",
     "Huawei Traning/华为软件采购质量管理要求.md",
     "Linux/Basic/polkit使用文档.md",
     "Linux/Basic/vim常用命令收集.md",
     "Linux/Shell/Shell 基本运算符.md",
     "未命名.canvas",
-    "CS-Notes/Algori/动态规划.md",
-    "未命名 1.canvas",
-    "Ops/常用配置文件路径.md"
+    "未命名 1.canvas"
   ]
 }
