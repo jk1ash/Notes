@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "51202125b930ddfc",
+        "id": "833fda572f97194d",
         "type": "tabs",
         "children": [
           {
-            "id": "c360256ea1bf6740",
+            "id": "8e5275740ac6534e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -150,8 +150,10 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "c360256ea1bf6740",
+  "active": "8e5275740ac6534e",
   "lastOpenFiles": [
+    "Ops/Hugo搭建指南.md",
+    "Ops/Hexo搭建指南.md",
     "Linux/Compile/Ubuntu开发环境安装.md",
     "Linux/Basic/Linux常用命令收集.md",
     "Linux/Basic/Git常用命令收集.md",
@@ -176,8 +178,6 @@
     "Linux/Basic/pulseaudio学习笔记.md",
     "Huawei Traning/华为软件采购质量管理要求.md",
     "Linux/Basic/polkit使用文档.md",
-    "Linux/Basic/vim常用命令收集.md",
-    "Linux/Shell/Shell 基本运算符.md",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
