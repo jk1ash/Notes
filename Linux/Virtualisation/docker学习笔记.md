@@ -41,44 +41,6 @@ curl -fsSL https://get.docker.com | sh -s docker
 ```shell
 apt-get install docker-compose
 ```
-
-## 使用阿里云镜像加速器
-
-```shell
-sudo mkdir -p /etc/docker
-vim  /etc/docker/daemon.json
-
-#输入
-{
-  "registry-mirrors": ["https://wzlet8dn.mirror.aliyuncs.com"]
-}
-或者
-{
-  "registry-mirrors": ["https://registry.aliyuncs.com/google_containers"]
-}
-
-
-sudo systemctl daemon-reload
-sudo systemctl restart docker
-```
-
-### 使用腾讯云镜像加速器
-
-```shell
-sudo mkdir -p /etc/docker
-vim  /etc/docker/daemon.json
-
-#输入
-{
-"registry-mirrors": [
-"https://mirror.ccs.tencentyun.com"
-]
-}
-
-sudo systemctl daemon-reload
-sudo systemctl restart docker
-```
-
 ### docker解除sudo限制
 
 ```shell

@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "cca64c2165bbfcac",
+        "id": "5e10b3325793fec4",
         "type": "tabs",
         "children": [
           {
-            "id": "49c7cf4180d5b648",
+            "id": "4b26acb17e4bd90c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ops/常用配置文件路径.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ops/常用配置文件路径.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ops/常用配置文件路径.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Ops/常用配置文件路径.md"
-              }
+              "state": {}
             }
           },
           {
@@ -158,8 +150,11 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "49c7cf4180d5b648",
+  "active": "4b26acb17e4bd90c",
   "lastOpenFiles": [
+    "Ops/oh my zsh配置.md",
+    "Linux/Virtualisation/docker学习笔记.md",
+    "Ops/常用配置文件路径.md",
     "Ops/对象存储挂载.md",
     "Linux/Basic/Git常用命令收集.md",
     "Ops/Hugo搭建指南.md",
@@ -182,10 +177,7 @@
     "CS-Notes/C++/基础知识.md",
     "Linux/Basic/Linux音频配置.md",
     "Linux/Compile/autotools流程.md",
-    "Linux/Virtualisation/docker学习笔记.md",
-    "Ops/oh my zsh配置.md",
     "Linux/Basic/pulseaudio学习笔记.md",
-    "Huawei Traning/华为软件采购质量管理要求.md",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
