@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ops/oh my zsh配置.md",
+                "file": "Linux/Compile/Ubuntu开发环境安装.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ops/oh my zsh配置.md",
+                "file": "Linux/Compile/Ubuntu开发环境安装.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ops/oh my zsh配置.md",
+                "file": "Linux/Compile/Ubuntu开发环境安装.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ops/oh my zsh配置.md"
+                "file": "Linux/Compile/Ubuntu开发环境安装.md"
               }
             }
           },
@@ -160,8 +160,8 @@
   },
   "active": "4b26acb17e4bd90c",
   "lastOpenFiles": [
-    "Linux/Basic/Linux磁盘管理.md",
     "Ops/oh my zsh配置.md",
+    "Linux/Basic/Linux磁盘管理.md",
     "Linux/Virtualisation/docker学习笔记.md",
     "Ops/常用配置文件路径.md",
     "Ops/对象存储挂载.md",
