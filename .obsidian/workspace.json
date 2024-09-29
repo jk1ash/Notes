@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Basic/Linux磁盘管理.md",
+                "file": "Ops/oh my zsh配置.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Basic/Linux磁盘管理.md",
+                "file": "Ops/oh my zsh配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Basic/Linux磁盘管理.md",
+                "file": "Ops/oh my zsh配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Basic/Linux磁盘管理.md"
+                "file": "Ops/oh my zsh配置.md"
               }
             }
           },
@@ -160,6 +160,7 @@
   },
   "active": "4b26acb17e4bd90c",
   "lastOpenFiles": [
+    "Linux/Basic/Linux磁盘管理.md",
     "Ops/oh my zsh配置.md",
     "Linux/Virtualisation/docker学习笔记.md",
     "Ops/常用配置文件路径.md",
@@ -169,7 +170,6 @@
     "Ops/Hexo搭建指南.md",
     "Linux/Compile/Ubuntu开发环境安装.md",
     "Linux/Basic/Linux常用命令收集.md",
-    "Linux/Basic/Linux磁盘管理.md",
     "Linux/Compile/Linux编译常见问题.md",
     "Linux/Compile/debian目录配置.md",
     "CS-Notes/Algori/快速排序.md",
