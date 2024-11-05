@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "workspaces:管理工作区布局": true,
       "canvas:新建白板": false,
       "switcher:打开快速切换": false,
