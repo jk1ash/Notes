@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cdda46eb6c53e73c",
+        "id": "176836f5c30d5be5",
         "type": "tabs",
         "children": [
           {
-            "id": "b71e711162f3cd70",
+            "id": "0afd1f3dd07e2386",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -169,7 +169,7 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "b71e711162f3cd70",
+  "active": "0afd1f3dd07e2386",
   "lastOpenFiles": [
     "Linux/Compile/Ubuntu开发环境安装.md",
     "Ops/oh my zsh配置.md",
