@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "176836f5c30d5be5",
+        "id": "c5933255ba9046d3",
         "type": "tabs",
         "children": [
           {
-            "id": "0afd1f3dd07e2386",
+            "id": "0a9fbf133c2939ca",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -132,9 +132,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "CS-Notes/C/CUnit单元测试.md"
+              },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "CUnit单元测试 的大纲"
             }
           },
           {
@@ -169,8 +171,10 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "0afd1f3dd07e2386",
+  "active": "27597d4c2b95a853",
   "lastOpenFiles": [
+    "CS-Notes/C/CUnit单元测试.md",
+    "未命名.md",
     "Linux/Compile/Ubuntu开发环境安装.md",
     "Ops/oh my zsh配置.md",
     "Linux/Basic/Linux磁盘管理.md",
@@ -195,8 +199,6 @@
     "CS-Notes/C/基础知识.md",
     "CS-Notes/C++/基础知识.md",
     "Linux/Basic/Linux音频配置.md",
-    "Linux/Compile/autotools流程.md",
-    "Linux/Basic/pulseaudio学习笔记.md",
     "未命名.canvas",
     "未命名 1.canvas"
   ]
