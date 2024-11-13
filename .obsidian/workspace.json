@@ -11,10 +11,14 @@
             "id": "0a9fbf133c2939ca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Compile/debian目录配置.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "debian目录配置"
             }
           }
         ]
@@ -133,10 +137,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS-Notes/C/CUnit单元测试.md"
+                "file": "Linux/Compile/debian目录配置.md"
               },
               "icon": "lucide-list",
-              "title": "CUnit单元测试 的大纲"
+              "title": "debian目录配置 的大纲"
             }
           },
           {
@@ -171,8 +175,9 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "27597d4c2b95a853",
+  "active": "0a9fbf133c2939ca",
   "lastOpenFiles": [
+    "Linux/Compile/Linux编译常见问题.md",
     "CS-Notes/C/CUnit单元测试.md",
     "未命名.md",
     "Linux/Compile/Ubuntu开发环境安装.md",
@@ -185,7 +190,6 @@
     "Ops/Hugo搭建指南.md",
     "Ops/Hexo搭建指南.md",
     "Linux/Basic/Linux常用命令收集.md",
-    "Linux/Compile/Linux编译常见问题.md",
     "Linux/Compile/debian目录配置.md",
     "CS-Notes/Algori/快速排序.md",
     "CS-Notes/Algori/冒泡排序.md",
