@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "287b8155a578e252",
+        "id": "e55fb20dca92087a",
         "type": "tabs",
         "children": [
           {
-            "id": "5bca02062c3c8c8f",
+            "id": "b0d8f90d6084d7a9",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -169,7 +169,7 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "5bca02062c3c8c8f",
+  "active": "b0d8f90d6084d7a9",
   "lastOpenFiles": [
     "Linux/Compile/debian目录配置.md",
     "Linux/Compile/Linux编译常见问题.md",
