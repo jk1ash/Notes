@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e55fb20dca92087a",
+        "id": "09eeff4d3a7c622f",
         "type": "tabs",
         "children": [
           {
-            "id": "b0d8f90d6084d7a9",
+            "id": "6653e70334a060a7",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -169,8 +169,9 @@
       "command-palette:打开命令面板": true
     }
   },
-  "active": "b0d8f90d6084d7a9",
+  "active": "27597d4c2b95a853",
   "lastOpenFiles": [
+    "Linux/Basic/Git常用命令收集.md",
     "Linux/Compile/debian目录配置.md",
     "Linux/Compile/Linux编译常见问题.md",
     "CS-Notes/C/CUnit单元测试.md",
@@ -181,7 +182,6 @@
     "Linux/Virtualisation/docker学习笔记.md",
     "Ops/常用配置文件路径.md",
     "Ops/对象存储挂载.md",
-    "Linux/Basic/Git常用命令收集.md",
     "Ops/Hugo搭建指南.md",
     "Ops/Hexo搭建指南.md",
     "Linux/Basic/Linux常用命令收集.md",
