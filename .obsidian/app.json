@@ -1,9 +1,0 @@
-{
-  "promptDelete": false,
-  "readableLineLength": true,
-  "showFrontmatter": false,
-  "strictLineBreaks": false,
-  "alwaysUpdateLinks": true,
-  "defaultViewMode": "preview",
-  "trashOption": "local"
-}
